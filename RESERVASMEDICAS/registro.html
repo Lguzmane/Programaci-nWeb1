@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MediApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="registroForm" class="bg-white p-4 rounded shadow">
+                    <h2 class="text-center mb-4">Registro de Paciente</h2>
+                    <div class="mb-3">
+                        <label for="rut" class="form-label">RUT (sin guión):</label>
+                        <input type="text" id="rut" class="form-control" required pattern="\d{7,8}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo:</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" id="password" class="form-control" required>
+                        <small class="text-muted">Mínimo 8 caracteres, con números y un carácter especial (!@#$%).</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

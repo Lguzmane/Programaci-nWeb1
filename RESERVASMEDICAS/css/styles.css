@@ -1,0 +1,107 @@
+:root {
+    --azul-oscuro: #1a237e;
+    --azul-medio: #3949ab;
+    --morado-claro: #9575cd;
+    --morado-pastel: #d1c4e9;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--azul-oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--azul-oscuro);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(26,35,126,0.2);
+}
+
+.navbar-brand {
+    color: var(--blanco) !important;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--azul-medio), var(--morado-claro));
+    border: none;
+    color: var(--blanco);
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(149,117,205,0.3);
+}
+
+
+.btn-outline-light {
+    color: var(--azul-oscuro);
+    border: 2px solid var(--azul-medio);
+    background-color: transparent;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+}
+
+
+.card {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(149,117,205,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--morado-pastel);
+}
+
+.form-control {
+    border: 2px solid var(--morado-pastel);
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--morado-claro);
+    box-shadow: 0 0 0 3px rgba(149,117,205,0.2);
+}
+
+h1, h2, h3 {
+    color: var(--azul-oscuro);
+}
+
+a {
+    color: var(--morado-claro);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--azul-medio);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
